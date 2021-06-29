@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/*----------------------html------------------------------*/
+html {
+    /*==============スクロールの記述=========================*/
+    scroll-behavior  : smooth;
+}
+
+/*----------------------body------------------------------*/
+body {
+    margin           : 0;
+    padding          : 0;
+    font-family      : "Times","helvetica neue", "YuGothic", "ヒラギノ角ゴ pron w3", "Hiragino Kaku Gothic ProN", "Arial", "メイリオ", "Meiryo", "sans-serif";
+    font-size        : 1rem;
+    line-height      : 150%;
+    color            : #000;
+    background       : #fff;
+}
+
+#h_r {
+    position         : fixed;
+    background-color : #ff5f17;
+    height           : 100px;
+    width            : 100%;
+    z-index          : 500;
+    display          : flex;
+}
+
+.h_l {
+    width            : 14vw;
+    height           : 14vh;
+}
+
+#h_r nav {
+    position         : relative;
+    left             : 300px;
+}
+/*-----------------------slide----------------------------*/
+.slide {
+    position         : relative;
+    top              : 80px;
+}
+
+/*----------------------Menu-------------------------------*/
+#menu {
+    position         : relative;
+    top              : 100px;
+}
+
+.m_h {
+    background       : #ff5f17;
+    position         : relative;
+    top              : -20px;
+}
+
+.m_h  h1 {
+    position         : relative;
+    left             : 50px;
+    color            : #fff;
+    font-size        : 60px;
+}
+/*-----------------------------card----------------------*/
+#card_set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.card {
+    flex-basis       : 24%;
+    margin-bottom    : 10px;
+}
+
+.card:nth-child(2), .card:nth-child(6) {
+    top              : 40px;   
+}
+
+.card:nth-child(3), .card:nth-child(7) {
+    top              : 80px;   
+}
+
+.card:nth-child(4), .card:nth-child(8) {
+    top              : 120px;   
+}
+
+.card-body {
+    background       : #ff5f17;
+    opacity          : 0.5;
+}
+
+.card-text {
+    font-size        : 30px;
+}
+
+/*-----------------------------footer----------------------*/
+
+#footer {
+    position         : relative;
+    top              : 250px;
+    background       : #ff5f17;
+}
